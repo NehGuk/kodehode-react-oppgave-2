@@ -1,2 +1,3 @@
-# kodehode-react-oppgave-2
-Just a simple exercise to practice Typescript and React
+# Kodehode | React | Oppgave 2
+
+Just a simple exercise to practice Typescript in React.
