@@ -1,3 +1,7 @@
 .cookie {
   max-width: 9rem; 
 }
+
+.cookie-btn {
+  cursor: pointer;
+}
