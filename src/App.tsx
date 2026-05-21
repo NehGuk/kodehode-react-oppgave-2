@@ -1,14 +1,17 @@
-/* import { useState } from 'react' */
-/* import reactLogo from './assets/react.svg' */
-/* import viteLogo from './assets/vite.svg' */
-/* import heroImg from './assets/hero.png' */
+
 import './App.css'
+import CatFacts from './components/CatFacts/CatFacts'
+import CookieClicker from './components/CookieClicker/CookieClicker'
+import Users from './components/Users/Users'
 
 function App() {
   return (
     <>
-      <h1>Get starteddddddd</h1>    
-    </>
+      <h1>Oppgave 2</h1>
+      <CookieClicker />
+      <CatFacts />
+      <Users />
+    </>    
   )
 }
 
