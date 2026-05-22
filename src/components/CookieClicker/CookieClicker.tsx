@@ -14,7 +14,7 @@ export default function CookieClicker() {
     <section>
       <h2>Cookie Clicker</h2>
       <button className="cookie-btn" onClick={handleClick}>
-        <img className="cookie" src={cookie} />
+        <img className="cookie" src={cookie} alt="Image of a cookie" />
       </button>
       <p>Points: {points}</p>
       <p>Obesity index: {obesityIndex} </p>
