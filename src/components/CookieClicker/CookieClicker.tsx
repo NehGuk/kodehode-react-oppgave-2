@@ -4,8 +4,10 @@ import { useState } from "react"
 
 export default function CookieClicker() {
   const [points, setPoints] = useState(0)
+  const [obesityIndex, setObesityIndex] = useState(0)
   const handleClick = () => {
     setPoints(prev => prev + 1)
+    setObesityIndex(prev => prev + 1.75)
   }
 
   return (
@@ -13,6 +15,7 @@ export default function CookieClicker() {
     <h2>Cookie Clicker</h2>
     <button className="cookie-btn" onClick={handleClick}><img className="cookie" src={cookie} /></button>
     <p>Points: {points}</p>
+    <p>Obesity index: {obesityIndex} </p>
     </section>
   )
 }
