@@ -35,6 +35,7 @@ export default function Users() {
           })}
         </tbody>
       </table>
+
       <form onSubmit={handleAddUser}>
         <input type="text" name="username" placeholder="username" />
         <input type="text" name="email" placeholder="email" />
