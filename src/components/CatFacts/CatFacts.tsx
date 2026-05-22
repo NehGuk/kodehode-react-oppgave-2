@@ -22,21 +22,19 @@ type CatFactsResponse = {
 }
 
 export default function CatFacts() {
-  const {data, loading, error} = useApiCall<CatFactsResponse>("https://catfact.ninja/facts?limit=5")
+  const { data, loading, error } = useApiCall<CatFactsResponse>("https://catfact.ninja/facts?limit=5")
   const catFacts: CatFact[] = data?.data ?? []
-  
+
   return (
     <section>
-    <h2>Cat Facts</h2>
-    {loading && <p>Loading...</p>}
-    {error && <p>Oh, no! Something went wrong.</p>}
-    <ul>
-      {catFacts.map((catFact, i) => {
-        return (
-            <li key={i}>{catFact.fact}</li> 
-        )
-      })}
-    </ul>
+      <h2>Cat Facts</h2>
+      {loading && <p>Loading...</p>}
+      {error && <p>Oh, no! Something went wrong.</p>}
+      <ul>
+        {catFacts.map((catFact, i) => {
+          return <li key={i}>{catFact.fact}</li>
+        })}
+      </ul>
     </section>
   )
 }

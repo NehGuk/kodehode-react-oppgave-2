@@ -1,8 +1,8 @@
 export default function Users() {
   return (
     <section>
-    <h2>Users</h2>
-    <p>blablabla</p>
+      <h2>Users</h2>
+      <p>blablabla</p>
     </section>
   )
 }

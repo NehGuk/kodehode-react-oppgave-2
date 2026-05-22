@@ -1,4 +1,4 @@
-import {useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 
 export default function useApiCall<T>(url: string) {
   const [data, setData] = useState<T | null>(null)
@@ -24,4 +24,3 @@ export default function useApiCall<T>(url: string) {
   }, [url])
   return { data, loading, error }
 }
-
