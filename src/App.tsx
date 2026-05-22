@@ -2,14 +2,17 @@ import "./App.css"
 import CatFacts from "./components/CatFacts/CatFacts"
 import CookieClicker from "./components/CookieClicker/CookieClicker"
 import Users from "./components/Users/Users"
+import Header from "./header/header"
 
 function App() {
   return (
     <>
-      <h1>Kodehode | React: oppgave 2</h1>
-      <CookieClicker />
-      <CatFacts />
-      <Users />
+      <Header />
+      <main>
+        <CookieClicker />
+        <CatFacts />
+        <Users />
+      </main>
     </>
   )
 }
